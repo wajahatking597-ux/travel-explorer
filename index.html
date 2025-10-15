@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Travel Explore - Home</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="shortcut icon" href="./images/navbar-logo.png" type="image/x-icon">
+</head>
+<body>
+
+ 
+  <!-- Sidebar Button -->
+  <div id="sidebarToggle">
+    <img src="./images/navbar-logo.png" alt="menu icon">
+  </div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <img src="./images/navbar-logo.png" alt="Logo" class="sidebar-logo">
+      <h3>Travel Explore</h3>
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="index.html" class="active">🏠 Home</a></li>
+      <li><a href="destination.html">🗺 Destinations</a></li>
+      <li><a href="contact.html">📞 Contact</a></li>
+      <li><a href="getstarted.html">🚀 Get Started</a></li>
+      <hr>
+      <li><a href="destination.html#favorites">⭐ Favorite</a></li>
+      <li><a href="contact.html#feedback" class="sidebar-link">💬 Feedback</a></li>
+    </ul>
+  </aside>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="./images/navbar-logo.png" alt="Logo" class="navbar-logo me-1">
+      Travel Explore
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="destination.html">Destination</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Navbar spacing -->
+<main class="pt-navbar">
+
+  <!-- Hero image Banner -->
+  <header class="hero-section d-flex align-items-center justify-content-center" role="banner"
+          style="background-image: url('images/home-baneer.jpg')">
+    <div class="hero-content text-center">
+      <h1>Explore Beautiful Pakistan</h1>
+      <p class="lead">Discover the culture, cities, and beauty of Pakistan</p>
+      <a class="btn btn-orange mt-3" href="getstarted.html">Get Started</a>
+    </div>
+  </header>
+
+  <!-- Why To Select Section -->
+  <div class="logo-para">
+    <div class="logo-text">
+      <h2 class="logo">Why To Select Travel Explore</h2>
+      <p>Travel Explore is your ultimate travel companion for discovering the beauty of Pakistan! From the snow-covered peaks of Hunza and Skardu to the sandy beaches of Gwadar, we help you explore breathtaking destinations, plan unforgettable trips, and experience the culture, food, and hospitality of Pakistan like never before. Start your adventure today with Travel Explore — where every journey begins with curiosity!</p>
+    </div>
+    <div class="logo-image">
+      <img src="./images/travel-1.jpg" alt="logo">
+    </div>
+  </div>
+
+  <!-- Bootstrap slider start -->
+  <div id="pakistanSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="800">
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="./images/faisalabad.jpg" class="d-block w-100" alt="Faisalabad">
+        <div class="carousel-caption">
+          <h3>Faisalabad</h3>
+          <p>Manchester of Pakistan</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./images/gilgit.jpg" class="d-block w-100" alt="Gilgit">
+        <div class="carousel-caption">
+          <h3>Gilgit</h3>
+          <p>Gateway to the Mighty Karakoram</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./images/islamabad.jpg" class="d-block w-100" alt="Islamabad">
+        <div class="carousel-caption">
+          <h3>Islamabad</h3>
+          <p>Capital of Peace & Beauty</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./images/lahore.jpeg" class="d-block w-100" alt="Lahore">
+        <div class="carousel-caption">
+          <h3>Lahore</h3>
+          <p>The Heart of Pakistan</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./images/karachi.jpg" class="d-block w-100" alt="Karachi">
+        <div class="carousel-caption">
+          <h3>Karachi</h3>
+          <p>City of Lights</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./images/peshawar.jpg" class="d-block w-100" alt="Peshawar">
+        <div class="carousel-caption">
+          <h3>Peshawar</h3>
+          <p>Oldest Living City of South Asia</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./images/muree.jpg" class="d-block w-100" alt="Murree">
+        <div class="carousel-caption">
+          <h3>Murree</h3>
+          <p>Queen of Hills</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./images/multan.jpeg" class="d-block w-100" alt="Multan">
+        <div class="carousel-caption">
+          <h3>Multan</h3>
+          <p>City of Saints</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./images/quetta.jpg" class="d-block w-100" alt="Quetta">
+        <div class="carousel-caption">
+          <h3>Quetta</h3>
+          <p>Fruit Garden of Pakistan</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#pakistanSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#pakistanSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <!-- Bootstrap slider End -->
+
+  <!-- Cities  section-->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Popular Cities in Pakistan</h2>
+    <div class="row g-4" id="citiesContainer">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/karachi.jpg" class="card-img-top" alt="Karachi">
+            <div class="card-body text-center">
+              <h5 class="card-title">Karachi</h5>
+            </div>
+          </div>
+        </div> 
+    </div>
+  </section>
+</main>
+
+<section class="text-section">
+  <p>
+    Discover the beauty of Pakistan — from serene mountains to bustling cities. Start your journey today and make memories that last a lifetime.
+  </p>
+</section>
+
+<!-- Plan Your Trip section start -->
+<section class="features py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4">Plan Your Trip Easily</h2>
+    <div class="row">
+
+      <!-- Flights -->
+      <div class="col-md-3">
+        <div class="feature-box">
+          <img src="./images/World Icons.svg" alt="Flights" class="feature-img">
+          <h5>Flights</h5>
+          <p>Book affordable flights to your favorite destinations with ease.</p>
+        </div>
+      </div>
+
+      <!-- Hotels -->
+      <div class="col-md-3">
+        <div class="feature-box">
+          <img src="./images/Hotel Icons.svg" alt="Hotels" class="feature-img">
+          <h5>Hotels</h5>
+          <p>Find comfortable stays that fit your style and budget.</p>
+        </div>
+      </div>
+
+      <!-- Guided Tours -->
+      <div class="col-md-3">
+        <div class="feature-box">
+          <img src="./images/Travel Icons.svg" alt="Guided Tours" class="feature-img">
+          <h5>Guided Tours</h5>
+          <p>Enjoy safe and exciting guided tours across Pakistan.</p>
+        </div>
+      </div>
+
+      <!-- Destinations -->
+      <div class="col-md-3">
+        <div class="feature-box">
+          <img src="./images/Compass Icons.svg" alt="Destinations" class="feature-img">
+          <h5>Destinations</h5>
+          <p>Explore breathtaking destinations across the country.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Plan Your Trip section ends -->
+
+<!-- extra section  -->
+<section class="contact-extra-section">
+  <h2>Need Help Planning Your Trip?</h2>
+  <p>Our travel experts are here to guide you! Whether it's itinerary planning, hotel booking, or local recommendations, we’ve got you covered.</p>
+  <p>Reach out to us and make your journey smooth, memorable, and hassle-free.</p>
+  <a href="contact.html" class="btn-contact-extra">Contact Our Experts</a>
+</section>
+
+<!-- Footer  starts-->
+<footer class="footer bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">     
+      <!-- About -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-orange mb-3">Travel Explore</h5>
+        <p class="small">
+          Discover the unseen beauty of Pakistan — from the mountains of Skardu to the deserts of Thar.
+          Plan your perfect trip with us and make unforgettable memories!
+        </p>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-orange mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="destination.html" class="text-light text-decoration-none">Destinations</a></li>
+          <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Social Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-orange mb-3">Follow Us</h5>
+        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+          <a href="https://facebook.com" class="social-link">
+            <img src="./images/facebook-logo.png" alt="Facebook" class="social-img">
+          </a>
+          <a href="https://instagram.com" class="social-link">
+            <img src="./images/instagram-logo.webp" alt="Instagram" class="social-img">
+          </a>
+          <a href="https://x.com" class="social-link">
+            <img src="./images/twitter-logo.png" alt="Twitter" class="social-img">
+          </a>
+          <a href="https://google.com" class="social-link">
+            <img src="./images/google-logo.png" alt="Google" class="social-img">
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="border-light">
+    <div class="text-center small">
+      <p class="mb-1">Made with ❤ in Pakistan</p>
+      <p class="mb-0">© 2025 <strong>Travel Explore</strong>. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<!-- footer ends  -->
+
+<script src="js/home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
