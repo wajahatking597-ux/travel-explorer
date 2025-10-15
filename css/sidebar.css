@@ -1,0 +1,93 @@
+/* ===== Sidebar Styles ===== */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -260px;
+      width: 250px;
+      height: 100%;
+      background: #1c1c1c;
+      color: #fff;
+      z-index: 1100;
+      transition: 0.4s ease;
+      padding: 20px;
+      box-shadow: 5px 0 15px rgba(0,0,0,0.4);
+    }
+    .sidebar.active {
+      left: 0;
+    }
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: space-between;
+    }
+    .sidebar-header h3 {
+      color: #ff7f00;
+      font-size: 1.3rem;
+    }
+    .sidebar-logo {
+      width: 40px;
+      height: 40px;
+    }
+    .sidebar-menu {
+      list-style: none;
+      padding: 0;
+      margin-top: 25px;
+    }
+    .sidebar-menu li {
+      margin-bottom: 15px;
+    }
+    .sidebar-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      display: block;
+      padding: 8px 0;
+      transition: 0.3s;
+    }
+    .sidebar-menu a:hover,
+    .sidebar-menu a.active {
+      color: #ff7f00;
+      padding-left: 5px;
+    }
+
+    /* Overlay behind sidebar */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 1000;
+      display: none;
+    }
+    .overlay.active {
+      display: block;
+    }
+
+    /* Toggle button (image at left center) */
+    #sidebarToggle {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      cursor: pointer;
+      z-index: 1200;
+    }
+    #sidebarToggle img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: #3a3535;
+      padding: 8px;
+      transition: 0.3s;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+    #sidebarToggle img:hover {
+      background: #e66e00;
+    }
+
+    html {
+  scroll-behavior: smooth;
+}
