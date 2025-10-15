@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Travel Explore - Destination</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+   <link rel="shortcut icon" href="./images/navbar-logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Sidebar Button -->
+  <div id="sidebarToggle">
+    <img src="./images/navbar-logo.png" alt="menu icon">
+  </div>
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <img src="./images/navbar-logo.png" alt="Logo" class="sidebar-logo">
+      <h3>Travel Explore</h3>
+    </div>
+    <ul class="sidebar-menu">
+      <li><a href="index.html" class="active">🏠 Home</a></li>
+      <li><a href="destination.html">🗺️ Destinations</a></li>
+      <li><a href="contact.html">📞 Contact</a></li>
+      <li><a href="getstarted.html">🚀 Get Started</a></li>
+      <hr>
+      <li><a href="#favorites" class="sidebar-link">⭐ Favorite</a></li>
+      <li><a href="contact.html#feedback" class="sidebar-link">💬 Feedback</a></li>
+    </ul>
+  </aside>
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+<!-- sidebar ends -->
+
+<!-- Navbar starts-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="./images/navbar-logo.png" alt="Logo" class="navbar-logo me-1">
+      Travel Explore
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="destination.html">Destination</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="pt-navbar">
+<!-- navbar ends -->
+ 
+  <!-- Banner -->
+  <div class="banner" style="background-image: url('./images/destanation.jpg')">
+    <h1>Explore Destinations</h1>
+  </div>
+
+  <!-- DESTINATION ADD SECTION -->
+<section id="favorites" class="container py-4">
+  <h2 class="text-center mb-3 text-orange">Add Favorite Places to Visit</h2>
+
+  <!-- Search/Add Input -->
+  <div class="row g-2 mb-3 justify-content-center">
+    <div class="col-md-6">
+      <input 
+        type="text" 
+        id="searchInput" 
+        class="form-control" 
+        placeholder="Type city name (e.g. Lahore, Karachi)..."
+      >
+    </div>
+    <div class="col-md-3">
+      <button id="addBtn" class="btn btn-orange w-100">Add Destination</button>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div id="destinationList" class="row g-3"></div>
+</section>
+
+
+
+<!-- TRAVEL TEPS  -->
+<section class="travel-tips py-5 text-center bg-dark text-light">
+  <div class="container">
+    <h2 class="text-orange mb-4">Travel Smart — Useful Tips</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <i class="bi bi-geo-alt-fill fs-1 text-orange"></i>
+        <h5>Plan Ahead</h5>
+        <p>Always check weather and local travel advisories before your trip.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-heart-fill fs-1 text-orange"></i>
+        <h5>Respect Local Culture</h5>
+        <p>Learn about local customs and traditions for a more authentic experience.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-shield-check fs-1 text-orange"></i>
+        <h5>Stay Safe</h5>
+        <p>Keep your important documents secure and stay connected with your group.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<marquee class="scroll-note"><b> Islamabad &  Gilgit</b><i> are most demanded destinations by our customers.</i></marquee>
+
+<!-- DESTINATION SECTIONS -->
+<section id="islamabad" class="destination">
+  <div class="text">
+    <h2>Islamabad</h2>
+    <p>Islamabad, the capital city of Pakistan, is known for its modern architecture, lush greenery, and scenic views. Key attractions include the Faisal Mosque, Daman-e-Koh, and the Pakistan Monument. The city is a perfect mix of natural beauty and urban charm, offering scenic hiking trails and peaceful surroundings.</p>
+  </div>
+  <img src="images/islamabad.jpg" alt="Islamabad">
+</section>
+
+<section id="gilgit" class="destination reverse">
+  <div class="text">
+    <h2>Gilgit</h2>
+    <p>Gilgit, the gateway to the mighty Karakoram Range, offers breathtaking mountains, crystal rivers, and adventure. It serves as a hub for trekkers and mountaineers heading to K2 and Nanga Parbat, with scenic valleys and the iconic Karakoram Highway.</p>
+  </div>
+  <img src="images/gilgit.jpg" alt="Gilgit">
+</section>
+
+
+
+<!-- TOP RATED SECTION  START -->
+<section class="top-rated py-5 text-center">
+  <div class="container">
+    <h2 class="text-orange mb-4">Top Rated Destinations</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow destination-card">
+          <img src="images/Hunza.jpg" class="card-img-top" alt="Hunza">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Hunza Valley</h5>
+            <p class="card-text text-muted">Known for its majestic mountains and stunning views — a paradise for nature lovers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow destination-card">
+          <img src="images/Skardu.jpg" class="card-img-top" alt="Skardu">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Skardu</h5>
+            <p class="card-text text-muted">Home to K2 base camp and the scenic Upper Kachura Lake.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow destination-card">
+          <img src="images/Swat.jpg" class="card-img-top" alt="Swat">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Swat Valley</h5>
+            <p class="card-text text-muted">The “Switzerland of Pakistan” — lush valleys, rivers, and stunning mountains.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TOP RATED SECTION END  -->
+
+
+<section class="travel-section">
+  <h2 class="section-heading">Explore More, Worry Less</h2>
+</section>
+
+ 
+<section id="karachi" class="destination">
+  <div class="text">
+    <h2>Karachi</h2>
+    <p>Karachi, the city of lights, is a vibrant metropolis known for its beaches, markets, and cultural diversity. Experience Clifton Beach, Quaid’s Mausoleum, and the city’s lively food and nightlife scene.</p>
+  </div>
+  <img src="images/karachi.jpg" alt="Karachi">
+</section>
+
+<section class="destination reverse">
+  <div class="text">
+    <h2>Faisalabad</h2>
+    <p>Faisalabad, known as the Manchester of Pakistan, is a textile hub full of energy and culture. Visit Ghanta Ghar, Jinnah Garden, and the lively bazaars that define this city’s spirit.</p>
+  </div>
+  <img src="images/faisalabad.jpg" alt="Faisalabad">
+</section>
+
+<section class="destination">
+  <div class="text">
+    <h2>Lahore</h2>
+    <p>Lahore, the cultural heart of Pakistan, is rich with Mughal heritage. Explore Badshahi Mosque, Lahore Fort, and indulge in its world-famous food and festivals.</p>
+  </div>
+  <img src="images/lahore.jpeg" alt="Lahore">
+</section>
+
+<section class="destination reverse">
+  <div class="text">
+    <h2>Multan</h2>
+    <p>Multan, the city of saints, is known for its shrines, bazaars, and crafts. Visit Multan Fort and experience the city’s deep spiritual and cultural charm.</p>
+  </div>
+  <img src="images/multan.jpeg" alt="Multan">
+</section>
+
+
+<section class="destination">
+  <div class="text">
+    <h2>Peshawar</h2>
+    <p>Peshawar, a city of history and tradition, is famous for Bala Hisar Fort, Qissa Khwani Bazaar, and its unique food. A perfect blend of past and present.</p>
+  </div>
+  <img src="images/peshawar.jpg" alt="Peshawar">
+</section>
+
+<section class="destination reverse">
+  <div class="text">
+    <h2>Quetta</h2>
+    <p>Quetta, the fruit garden of Pakistan, offers mountainous beauty, Hanna Lake, and vibrant bazaars. A blend of tribal culture and natural beauty.</p>
+  </div>
+  <img src="images/quetta.jpg" alt="Quetta">
+</section>
+
+<section class="destination">
+  <div class="text">
+    <h2>Murree</h2>
+    <p>Murree, the Queen of Hills, is a serene hill station surrounded by pine forests and misty mountains — a perfect escape for peace and beauty.</p>
+  </div>
+  <img src="images/muree.jpg" alt="Murree">
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-light pt-5 pb-3">
+  <div class="container">
+
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-3">Travel Explore</h5>
+        <p class="small">Travel Explore helps you discover the unseen beauty of Pakistan — from the mountains of Hunza to the deserts of Thar. Plan your perfect trip with us!</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-3">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="destination.html" class="text-light text-decoration-none">Destinations</a></li>
+          <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase mb-3">Follow Us</h5>
+        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+          <a href="https://facebook.com" class="social-link"><img src="./images/facebook-logo.png" alt="Facebook" class="social-img"></a>
+          <a href="https://instagram.com" class="social-link"><img src="./images/instagram-logo.webp" alt="Instagram" class="social-img"></a>
+          <a href="https://x.com" class="social-link"><img src="./images/twitter-logo.png" alt="Twitter" class="social-img"></a>
+          <a href="https://google.com" class="social-link"><img src="./images/google.com" alt="Google" class="social-img"></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light">
+    <div class="text-center small">
+      <p class="mb-1">Made with ❤️ in Pakistan</p>
+      <p class="mb-0">© 2025 <strong>Travel Explore</strong>. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/crud.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
